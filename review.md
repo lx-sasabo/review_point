@@ -42,8 +42,8 @@ console.log(userName, deletedUser) // yamashita true
 ###  GETリクエストでサーバーから情報をとってくる場合getよりfetchのほうが良い
 理由: APIへのアクセスは重い処理のため。getは軽い処理のときに使う。<br>
 背景: Fetch APIができてからはfetchの方が使われるようになっている。以前は、jQuery.getとかjQuery.postみたいに送信するHTTPリクエスト メソッド名に対応した名前をつけることが多かった。<br>
-参考: https://qiita.com/Ted-HM/items/7dde25dcffae4cdc7923#%E4%BD%BF%E3%81%A3%E3%81%A6%E3%81%AF%E3%81%84%E3%81%91%E3%81%AA%E3%81%84%E8%A8%80%E8%91%89
-参考: https://developer.mozilla.org/ja/docs/Web/API/Fetch_API
+参考: https://qiita.com/Ted-HM/items/7dde25dcffae4cdc7923#%E4%BD%BF%E3%81%A3%E3%81%A6%E3%81%AF%E3%81%84%E3%81%91%E3%81%AA%E3%81%84%E8%A8%80%E8%91%89<br>
+参考: https://developer.mozilla.org/ja/docs/Web/API/Fetch_API<br>
 参考: https://api.jquery.com/category/ajax/shorthand-methods/
 
 
