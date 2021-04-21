@@ -17,7 +17,7 @@
 参考: https://railsguides.jp/action_controller_overview.html#response%E3%82%AA%E3%83%96%E3%82%B8%E3%82%A7%E3%82%AF%E3%83%88
 
 ### クエリストリングスの生成はHash#to_queryを使う
-参考: https://railsguides.jp/active_support_core_extensions.html#to-query
+参考: https://railsguides.jp/active_support_core_extensions.html#to-query<br>
 参考: https://qiita.com/QUANON/items/4a0a06e0ed76b9a07bc7
 
 
@@ -41,7 +41,11 @@ console.log(userName, deletedUser) // yamashita true
 
 ###  GETリクエストでサーバーから情報をとってくる場合getよりfetchのほうが良い
 理由: APIへのアクセスは重い処理のため。getは軽い処理のときに使う。<br>
+背景: Fetch APIができてからはfetchの方が使われるようになっている。以前は、jQuery.getとかjQuery.postみたいに送信するHTTPリクエスト メソッド名に対応した名前をつけることが多かった。<br>
 参考: https://qiita.com/Ted-HM/items/7dde25dcffae4cdc7923#%E4%BD%BF%E3%81%A3%E3%81%A6%E3%81%AF%E3%81%84%E3%81%91%E3%81%AA%E3%81%84%E8%A8%80%E8%91%89
+参考: https://developer.mozilla.org/ja/docs/Web/API/Fetch_API
+参考: https://api.jquery.com/category/ajax/shorthand-methods/
+
 
 ## html
 
@@ -49,10 +53,12 @@ console.log(userName, deletedUser) // yamashita true
 理由: レスポンシブレイアウトでの自由さがないなどの特性が色々あるため<br>
 参考: https://qiita.com/sawadays0118/items/4c329fd05cdff14ffebc
 
+
 ## React
 ### keyにindexを使わない
 理由: 要素を一意に識別できないため<br>
 参考: https://github.com/yannickcr/eslint-plugin-react/blob/master/docs/rules/no-array-index-key.md
+
 
 ## テストについて
 ### テストの期待値ははなるべくベタ書きする
@@ -63,7 +69,12 @@ console.log(userName, deletedUser) // yamashita true
 理由: 慣例。ただしプロジェクトで別途ルールがある場合はプロジェクトごとのルールに従って下さい。<br>
 参考: https://www.betterspecs.org/
 
-### letよりlet!を使えないか検討する
+### letとlet!の違いを理解する
+`let`: 定義した定数が初めて使われたときに評価される遅延評価<br>
+`let!`: 各テストのブロック実行前に定義した定数を作る<br>
+参考: https://qiita.com/jnchito/items/42193d066bd61c740612<br>
+一概にどちらを使うほうが良いということはないのでプロジェクトのルールや状況に応じて使い分ける<br>
+let!派の意見↓<br>
 参考: https://github.com/willnet/rspec-style-guide#let%E3%81%A8let%E3%81%AE%E4%BD%BF%E3%81%84%E5%88%86%E3%81%91
 
 ### beforeやlet!は必要な場所の近くに書く
