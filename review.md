@@ -20,6 +20,12 @@
 参考: https://railsguides.jp/active_support_core_extensions.html#to-query<br>
 参考: https://qiita.com/QUANON/items/4a0a06e0ed76b9a07bc7
 
+### トランザクションについて
+参考: https://railsdoc.com/page/transaction<br>
+参考: https://techracho.bpsinc.jp/hachi8833/2020_11_30/101160
+
+### destroy_allの戻り値はtrue/falseでないので削除されたか別途チェックが必要
+参考: https://qiita.com/jnchito/items/3393c5c1a744199e128a#%E5%8F%82%E8%80%832-destroy_all%E3%82%92%E4%BD%BF%E3%81%86%E5%A0%B4%E5%90%88%E3%81%AE%E6%B3%A8%E6%84%8F%E7%82%B9
 
 ## JavaScript
 
